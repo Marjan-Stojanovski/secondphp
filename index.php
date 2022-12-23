@@ -10,7 +10,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form method="post" action="/process/process.php">
+            <form method="post" action="/process.php">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Product Name</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="product_name">
