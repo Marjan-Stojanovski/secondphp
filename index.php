@@ -4,13 +4,19 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h1>Store Products</h1>
+        <br>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <h1>Create New Product</h1>
+        </div>
+        <div class="col-md-2">
+            <a href="list.php" class="btn btn-primary">List Available Products</a>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <form method="post" action="/process.php">
+            <form method="post" action="process.php">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Product Name</label>
                     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="product_name">
