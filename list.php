@@ -30,7 +30,7 @@ while ($product = mysqli_fetch_assoc($query)) {
             <table class="table">
                 <thead>
                 <tr>
-                    <th hidden>Id</th>
+                    <th>Id</th>
                     <th>Product Name</th>
                     <th>Product Description</th>
                     <th>Product Price</th>
@@ -43,7 +43,7 @@ while ($product = mysqli_fetch_assoc($query)) {
 
                 foreach($products as $product) {
                     echo '<tr>
-                    <td hidden>'.$product['id'].'</td>
+                    <td><a href="/product.php?id='.$product['id'].'">'.$product['id'].'</a></td>
                     <td>'.$product['product_name'].'</td>
                     <td>'.$product['product_desc'].'</td>
                     <td>'.$product['product_price'].' den</td>
