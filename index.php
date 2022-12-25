@@ -19,21 +19,21 @@
             <form method="post" action="process.php">
                 <div class="form-group">
                     <label for="exampleInputEmail1">Product Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="product_name">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="product_name">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Product Description</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="product_desc">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="product_desc">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Product Price</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="product_price">
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required name="product_price">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Customer Name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" name="customer_name">
+                    <input type="text" class="form-control" id="exampleInputPassword1" required name="customer_name">
                 </div>
-                <button type="submit" class="btn btn-primary">Insert</button>
+                <button type="submit" class="btn btn-primary green">Insert Product</button>
             </form>
 
         </div>

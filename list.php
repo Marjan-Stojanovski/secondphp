@@ -21,7 +21,7 @@ while ($product = mysqli_fetch_assoc($query)) {
             <h1>Manage Products</h1>
         </div>
         <div class="col-md-2">
-            <a href="index.php" class="btn btn-primary">Create Product</a>
+            <a href="index.php" class="btn btn-primary">Create/Modify Product</a>
         </div>
     </div>
     <br>
@@ -46,10 +46,11 @@ while ($product = mysqli_fetch_assoc($query)) {
                     <td hidden>'.$product['id'].'</td>
                     <td>'.$product['product_name'].'</td>
                     <td>'.$product['product_desc'].'</td>
-                    <td>'.$product['product_price'].'den</td>
+                    <td>'.$product['product_price'].' den</td>
                     <td>'.$product['customer_name'].'</td>
                     <td>
                        <a href="/manage.php?id='.$product['id'].'" class="btn btn-danger">Delete Product</a>
+                       <a href="/modify.php?id='.$product['id'].'" class="btn btn-warning">Modify Product</a>
                     </td>
                 </tr>';
                 };
@@ -60,9 +61,10 @@ while ($product = mysqli_fetch_assoc($query)) {
         </div>
     </div>
 </div>
+
+
 <?php
-
-
+    require_once "footer.php";
 ?>
 
 

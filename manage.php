@@ -8,7 +8,7 @@ $id = $_GET['id'];
 
 $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB) or die('Connection error');
 
-$query = mysqli_query($conn, "SELECT * FROM products WHERE id='.$id.'");
+$query = mysqli_query($conn, "DELETE FROM products WHERE id='$id'");
 
 if ($query) {
     header('Location: list.php');
