@@ -1,6 +1,6 @@
 <?php
 require_once "header.php";
-require_once "./db/db.php";
+require_once "./config/db.php";
 ?>
 <?php
 
@@ -21,7 +21,7 @@ while ($product = mysqli_fetch_assoc($query)) {
             <h1>Manage Products</h1>
         </div>
         <div class="col-md-2">
-            <a href="index.php" class="btn btn-primary">Create/Modify Product</a>
+            <a href="createproduct.php" class="btn btn-primary">Create/Modify Product</a>
         </div>
     </div>
     <br>

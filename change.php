@@ -1,6 +1,6 @@
 <?php
 require_once "header.php";
-require_once "./db/db.php";
+require_once "./config/db.php";
 ?>
 <?php
 
@@ -29,7 +29,7 @@ if(isset($_POST['customer_name']) && !empty($_POST['customer_name']))  {
 $query = mysqli_query($conn, "UPDATE products SET product_name = '$product_name', product_desc = '$product_desc', product_price = '$product_price', customer_name = '$customer_name' WHERE id='$id'");
 
 if ($query) {
-    header('Location: list.php');
+    header('Location: listproducts.php');
 } else {
     header('Location: 404.php');
 };
